@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXApi.h"
 #import <WeexSDK/WeexSDK.h>
 #import "WXCustomEventModule.h"
 #import "WXMapComponent.h"

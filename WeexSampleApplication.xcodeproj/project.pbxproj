@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		116D43AD21A8C7933B9B01C4 /* libPods-WeexSampleApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B858CA175796EFFACC4214 /* libPods-WeexSampleApplication.a */; };
 		DC02FAB7205929A90069F71F /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = DC02FAB6205929A90069F71F /* WXImgLoaderDefaultImpl.m */; };
+		DC04F84A20906DF0000070DC /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04F84920906DF0000070DC /* libWeChatSDK.a */; };
+		DC04F84C209080A3000070DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04F84B209080A2000070DC /* SystemConfiguration.framework */; };
+		DC04F84E209080AA000070DC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04F84D209080AA000070DC /* CoreTelephony.framework */; };
+		DC04F850209080C8000070DC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04F84F209080C7000070DC /* libsqlite3.0.tbd */; };
+		DC04F8522090812E000070DC /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04F8512090812D000070DC /* libz.1.1.3.tbd */; };
 		DCB729132057BD1100DE36A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB729122057BD1100DE36A5 /* AppDelegate.m */; };
 		DCB729162057BD1100DE36A5 /* WeexDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB729152057BD1100DE36A5 /* WeexDemoViewController.m */; };
 		DCB729192057BD1100DE36A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB729172057BD1100DE36A5 /* Main.storyboard */; };
@@ -45,6 +50,14 @@
 		A843E3F8FFBF7A99A5CEDA53 /* Pods-WeexSampleApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeexSampleApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeexSampleApplication/Pods-WeexSampleApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		DC02FAB5205929A90069F71F /* WXImgLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXImgLoaderDefaultImpl.h; sourceTree = "<group>"; };
 		DC02FAB6205929A90069F71F /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
+		DC04F84620906DEF000070DC /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = WechatSDK1.8.2/WechatAuthSDK.h; sourceTree = "<group>"; };
+		DC04F84720906DF0000070DC /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = WechatSDK1.8.2/WXApiObject.h; sourceTree = "<group>"; };
+		DC04F84820906DF0000070DC /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = WechatSDK1.8.2/WXApi.h; sourceTree = "<group>"; };
+		DC04F84920906DF0000070DC /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = WechatSDK1.8.2/libWeChatSDK.a; sourceTree = "<group>"; };
+		DC04F84B209080A2000070DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DC04F84D209080AA000070DC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DC04F84F209080C7000070DC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		DC04F8512090812D000070DC /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		DCB7290E2057BD1100DE36A5 /* WeexSampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeexSampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB729112057BD1100DE36A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCB729122057BD1100DE36A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC04F8522090812E000070DC /* libz.1.1.3.tbd in Frameworks */,
+				DC04F850209080C8000070DC /* libsqlite3.0.tbd in Frameworks */,
+				DC04F84E209080AA000070DC /* CoreTelephony.framework in Frameworks */,
+				DC04F84C209080A3000070DC /* SystemConfiguration.framework in Frameworks */,
+				DC04F84A20906DF0000070DC /* libWeChatSDK.a in Frameworks */,
 				116D43AD21A8C7933B9B01C4 /* libPods-WeexSampleApplication.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +125,10 @@
 		AD45BAD58FC11E4289368F52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC04F8512090812D000070DC /* libz.1.1.3.tbd */,
+				DC04F84F209080C7000070DC /* libsqlite3.0.tbd */,
+				DC04F84D209080AA000070DC /* CoreTelephony.framework */,
+				DC04F84B209080A2000070DC /* SystemConfiguration.framework */,
 				78B858CA175796EFFACC4214 /* libPods-WeexSampleApplication.a */,
 			);
 			name = Frameworks;
@@ -115,6 +137,10 @@
 		DCB729052057BD1100DE36A5 = {
 			isa = PBXGroup;
 			children = (
+				DC04F84920906DF0000070DC /* libWeChatSDK.a */,
+				DC04F84620906DEF000070DC /* WechatAuthSDK.h */,
+				DC04F84820906DF0000070DC /* WXApi.h */,
+				DC04F84720906DF0000070DC /* WXApiObject.h */,
 				DCB729102057BD1100DE36A5 /* WeexSampleApplication */,
 				DCB729292057BD1100DE36A5 /* WeexSampleApplicationTests */,
 				DCB729342057BD1100DE36A5 /* WeexSampleApplicationUITests */,
@@ -187,7 +213,6 @@
 				DCB7290A2057BD1100DE36A5 /* Sources */,
 				DCB7290B2057BD1100DE36A5 /* Frameworks */,
 				DCB7290C2057BD1100DE36A5 /* Resources */,
-				9DB692EAA4A73AE083FD183E /* [CP] Embed Pods Frameworks */,
 				5F38B2F525C2145E2294BCC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -333,8 +358,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeexSampleApplication/Pods-WeexSampleApplication-resources.sh",
-				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
-				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+				"${PODS_ROOT}/../incubator-weex/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/../incubator-weex/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -344,21 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexSampleApplication/Pods-WeexSampleApplication-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DB692EAA4A73AE083FD183E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeexSampleApplication/Pods-WeexSampleApplication-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -542,6 +552,10 @@
 				INFOPLIST_FILE = WeexSampleApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WechatSDK1.8.2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.apache.weex.WeexSampleApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,6 +571,10 @@
 				INFOPLIST_FILE = WeexSampleApplication/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WechatSDK1.8.2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.apache.weex.WeexSampleApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
